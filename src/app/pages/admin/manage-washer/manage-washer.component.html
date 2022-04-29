@@ -1,0 +1,46 @@
+<h1 class="ghai"><b>Available Washer List</b></h1>
+<mat-card class="mt10" *ngFor="let w of Washers" class="first">
+    
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>
+            <h2> id is:{{w.id}}</h2>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <h2> username:{{w.username}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> password:{{w.password}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2>  washerName:{{w.washerName}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> contactNo:{{w.contactNo}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> washerEmail:{{w.washerEmail}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> washerAddress:{{w.washerAddress}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> role:{{w.role}}</h2>
+        </mat-card-subtitle>
+        <mat-card-content>
+        
+        </mat-card-content>
+        
+
+
+        
+    </mat-card-header>
+    <button mat-flat-button color="primary" class="ml20" (click)=" deleteWasher(w.id)" >Delete</button>
+   
+</mat-card>
+<div class="container text-center mt-20">
+<button   routerLink="/admin/add-washer" mat-raised-button color="accent" class="ml20">Add</button>
+
+</div>
+
+

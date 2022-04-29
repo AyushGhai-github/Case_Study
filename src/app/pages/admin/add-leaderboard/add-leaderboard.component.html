@@ -1,0 +1,50 @@
+<h1> <b>Add New Washer to Leaderboard </b></h1>
+<mat-card class="first">
+    
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <form (ngSubmit)="addLeaderboard()">
+                <!-- packName field -->
+
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter Rank of Washer</b></mat-label>
+                    <input
+                    required
+                        [(ngModel)]="Leaderboard.rank"
+                     type="number" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter washer Name</b></mat-label>
+                    <input
+                    required
+                        [(ngModel)]="Leaderboard.washerName"
+                     type="text" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter how much water is saved in litres</b></mat-label>
+                    <input
+                    [(ngModel)]="Leaderboard.waterSavedInLiters"
+                     type="number" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter how much hours did worker works</b></mat-label>
+                    <input
+                    [(ngModel)]="Leaderboard.workingHrs"
+                     type="number" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <div class="container text-center">
+                    <button mat-raised-button color="primary">Add</button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</mat-card>
+
+

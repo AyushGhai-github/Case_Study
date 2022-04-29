@@ -1,0 +1,14 @@
+.example-header-image {
+    background-image: url('../../../../assets/clipboard.png');
+    background-size: cover;
+  }
+  .first{
+    background:lightblue;
+    border: 2px solid black;
+  }
+  .ayush{
+    text-align: center;
+    background-color: yellow;
+    padding: 7px;
+
+  }

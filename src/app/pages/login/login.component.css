@@ -1,0 +1,14 @@
+.full-width
+{
+    width:100%;
+}
+.first
+{
+    border: 4px solid black;
+}
+.bootstrap-wrapper{
+    
+        /* background-color: yellow; */
+        background-image: url(../../../assets/hello.jpg);
+     
+}

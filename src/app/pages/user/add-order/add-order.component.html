@@ -1,0 +1,176 @@
+<!-- <h1> <b>Add New Order </b></h1>
+<mat-card class="first">
+    
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <form (ngSubmit)="addOrder()">
+               
+
+               
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter Customer Name</b></mat-label>
+                    <input
+                    required
+                        [(ngModel)]="Orders.customerName"
+                     type="text" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter Customer Email</b></mat-label>
+                    <input
+                    required
+                    [(ngModel)]="Orders.customerEmail"
+                     type="email" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter Customer Address</b></mat-label>
+                    <input
+                    required
+                    [(ngModel)]="Orders.customerAddress"
+                     type="address" name="title" placeholder="Enter Address "matInput/>
+
+                </mat-form-field>
+                
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter Customer Contact No</b></mat-label>
+                    <input
+                    required
+                    [(ngModel)]="Orders.customerContactNo"
+                     type="number" name="title" placeholder="Enter Contact "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter car name</b></mat-label>
+                    <input
+                    required
+                    [(ngModel)]="Orders.carName"
+                     type="text" name="title" placeholder="Enter car name"matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter Car No</b></mat-label>
+                    <input
+                    required
+                    [(ngModel)]="Orders.carNo"
+                     type="text" name="title" placeholder="Enter Contact "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>select wash pack</b></mat-label> 
+                    
+            
+                     <input
+                    [(ngModel)]="Orders.selectedWashpack"
+                     type="text" name="title" placeholder="Enter WashPack "matInput/>
+
+                </mat-form-field>
+
+               
+
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>select date</b></mat-label>
+                    <input
+                    required
+                    [(ngModel)]="Orders.date"
+                     type="date" name="title" placeholder="select date "matInput/>
+
+                </mat-form-field>
+
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>select time</b></mat-label>
+                    <input
+                    required
+                    [(ngModel)]="Orders.time"
+                     type="time" name="title" placeholder="select time "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Total amount is</b></mat-label>
+                    <input
+                   
+                    [(ngModel)]="Orders.totalAmount"
+                     type="number" name="title" placeholder="amount is "matInput/>
+
+                </mat-form-field>
+                <div class="container text-center">
+                    <button mat-raised-button color="warn">Place Order</button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</mat-card>
+ -->
+ 
+ <mat-card style="margin-top: 20px;background-color: whitesmoke;">
+    <h1 class="text-center" style="color: black;"><b>Place Order</b></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+
+                <form *ngIf="wash" (submit)="addOrder()">
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter Customer Name</mat-label>
+                        <input required [(ngModel)]="Orders.customerName" type="text" name="id" placeholder="Enter here" matInput />
+                    </mat-form-field>
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter Customer Email</mat-label>
+                        <input required [(ngModel)]="Orders.customerEmail" type="email" name="email" placeholder="Enter here" matInput />
+                    </mat-form-field>
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter Customer Address</mat-label>
+                        <input required [(ngModel)]="Orders.customerAddress" type="address" name="address" placeholder="Enter here" matInput />
+                    </mat-form-field>
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter Customer Contact</mat-label>
+                        <input required [(ngModel)]="Orders.customerContactNo" type="number" name="contact" placeholder="Enter here" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter car name</mat-label>
+                        <input required [(ngModel)]="Orders.carName" type="text" name="carName" placeholder="Enter here"  matInput/>
+                    </mat-form-field>
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter car Number</mat-label>
+                        <input required [(ngModel)]="Orders.carNo" type="text" name="carNo" placeholder="Enter here"  matInput/>
+                    </mat-form-field>
+
+                <mat-form-field class="w100" appearance="outline">
+                    <mat-label style="color: black;">select wash pack</mat-label>
+                    <input required [(ngModel)]="Orders.selectedWashpack" type="text" name="washPack" placeholder="Enter here" matInput/>
+                </mat-form-field>
+
+                <mat-form-field class="w100" appearance="outline">
+                    <mat-label style="color: black;">select date</mat-label>
+                    <input required [(ngModel)]="Orders.date" type="date" name="date" placeholder="Enter here" matInput/>
+                </mat-form-field>
+
+                <mat-form-field class="w100" appearance="outline">
+                    <mat-label style="color: black;">select time</mat-label>
+                    <input required [(ngModel)]="Orders.time" type="time" name="time" placeholder="Enter here" matInput/>
+                </mat-form-field>
+
+                <mat-form-field class="w100" appearance="outline">
+                    <mat-label style="color: black;"><b>Total amount is</b></mat-label>
+                    <input required [(ngModel)]="Orders.totalAmount" type="number" name="totalAmount" placeholder="Enter here"  matInput/>
+                </mat-form-field>
+                <div class="container text-center mb-20">
+                    <button (click)="paynow()" mat-raised-button color="primary" class="mb20" style="width:100%">Payment</button>
+                    </div>
+
+                    <div class="container text-center mb-20">
+                        <button mat-raised-button color="warn">Place Order</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</mat-card>

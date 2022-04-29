@@ -1,0 +1,58 @@
+<h1 class="ghai"> <b>Add New Washer</b></h1>
+<mat-card class="first">
+    
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <form (ngSubmit)="addWasher()">
+                <!-- packName field -->
+
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter washer Id</b></mat-label>
+                    <input
+                    required
+                        [(ngModel)]=" washer.id"
+                     type="number" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter washer Name</b></mat-label>
+                    <input
+                    required
+                        [(ngModel)]=" washer.washerName"
+                     type="text" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter contactNo</b></mat-label>
+                    <input
+                    [(ngModel)]="washer.contactNo"
+                     type="number" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter Email</b></mat-label>
+                    <input
+                    [(ngModel)]="washer.washerEmail"
+                     type="email" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter washer Address</b></mat-label>
+                    <input
+                    [(ngModel)]="washer.washerAddress"
+                     type="address" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <div class="container text-center">
+                    <button mat-raised-button color="primary">Add</button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</mat-card>
+
+

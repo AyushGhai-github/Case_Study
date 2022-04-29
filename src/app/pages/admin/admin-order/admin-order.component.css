@@ -1,0 +1,13 @@
+.first{
+    background:yellow;
+    border: 2px solid black;
+  }
+  .example-header-image {
+    background-image: url('../../../../assets/clipboard.png');
+    background-size: cover;
+  }
+  .ghai{
+    text-align: center;
+    background-color:greenyellow;;
+    padding: 7px;
+  }

@@ -1,0 +1,41 @@
+<h1 class="ghai"> <b>Add New WashPack </b></h1>
+<mat-card class="first">
+    
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <form (ngSubmit)="addWashPack()">
+                <!-- packName field -->
+
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter washPack Id</b></mat-label>
+                    <input
+                    required
+                        [(ngModel)]="WashPackData.id"
+                     type="number" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter washPack Name</b></mat-label>
+                    <input
+                    required
+                        [(ngModel)]="WashPackData.packName"
+                     type="text" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <mat-form-field class="w100" appearance="fill">
+                    <mat-label><b>Enter Amount</b></mat-label>
+                    <input
+                    [(ngModel)]="WashPackData.amount"
+                     type="text" name="title" placeholder="Enter here "matInput/>
+
+                </mat-form-field>
+                <div class="container text-center">
+                    <button mat-raised-button color="primary">Add</button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</mat-card>
+

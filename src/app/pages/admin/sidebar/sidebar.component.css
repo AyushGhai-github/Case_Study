@@ -1,0 +1,27 @@
+/* .first{
+    background-color:lightblue;
+    /* border: 2px solid black; */
+*/
+
+.second:hover{
+    text-shadow: 14px 14px 14px red;
+}
+button:hover{
+    color:red;
+    width:100%;
+}
+
+.card
+{
+    text-align: start;
+    margin-top: 0px;
+    text-align: left;
+    height: 100%;
+    /* position: fixed; */
+    background-color:lightblue; 
+    border: 6px solid black;
+
+
+}
+
+

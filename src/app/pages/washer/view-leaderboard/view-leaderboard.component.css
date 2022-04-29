@@ -1,0 +1,14 @@
+.example-header-image {
+    background-image: url('../../../../assets/trophy.png');
+    background-size: cover;
+    image-resolution: 90%;
+  }
+.first{
+    background:chartreuse;
+    border: 2px solid black;
+  }
+.second{
+  text-align: center;
+  background-color: aqua;
+  padding: 2px;
+}

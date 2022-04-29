@@ -1,0 +1,33 @@
+<h1 class="ghai"><b>Leaderboard Ranking</b></h1>
+<mat-card class="mt10" *ngFor="let l of Leaderboard" class="first">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>
+            <h2><b>Rank</b>: {{l.rank}}</h2>
+         </mat-card-title>
+        <mat-card-subtitle>
+           <h2>Washer Name: {{l.washerName}}</h2>
+        </mat-card-subtitle>
+        
+        <mat-card-subtitle>
+           <h2>Water save in litres: {{l.waterSavedInLiters}} litres</h2> 
+        </mat-card-subtitle>
+
+        <mat-card-subtitle>
+            <h2>Working in hrs: {{l.workingHrs}} hrs</h2> 
+         </mat-card-subtitle>
+
+        
+    </mat-card-header>
+    <mat-card-content>
+        <!-- <div class="container">
+<button  mat-raised-button color="primary" class="ml20">Update</button>
+</div> -->
+
+    </mat-card-content> 
+   
+</mat-card> 
+<div class="container text-center mt-20">
+<button  routerLink="/admin/add-leaderboard" mat-raised-button color="accent" class="ml20">Add</button>
+</div>
+

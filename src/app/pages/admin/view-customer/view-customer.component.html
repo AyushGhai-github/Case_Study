@@ -1,0 +1,45 @@
+<h1 class="ghai"><b>Active Customers List</b></h1>
+<mat-card class="mt10" *ngFor="let c of Customers" class="first">
+  
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>
+            <h2> customerId is:{{c.customerId}}</h2>
+        </mat-card-title>
+        <!-- <mat-card-subtitle>
+            <h2> userName:{{c.userName}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> password:{{c.password}}</h2>
+        </mat-card-subtitle> -->
+        <mat-card-subtitle>
+            <h2>  customerName:{{c.customerName}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> customerAddress:{{c.customerAddress}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> customerContactNo:{{c.customerContactNo}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> enabled:{{c.enabled}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> profile:{{c.profile}}</h2>
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2> role:{{c.role}}</h2>
+        </mat-card-subtitle>
+        
+
+
+        
+    </mat-card-header>
+   
+</mat-card>
+<div class="container text-center mt-20">
+<button  mat-raised-button color="accent" class="ml20">Add</button>
+</div>
+
+
+

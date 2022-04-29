@@ -1,0 +1,33 @@
+.first{
+    background-color: yellow;
+    
+}
+/* hr{
+    height: 80px;
+    width:25%;
+    margin:-95px 0;
+    background:linear-gradient(to bottom,#ffff00 0%,#ff3399 100%);
+    border:none;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+}
+.two:hover ~ hr{
+    margin-b: 25%;
+} */
+
+button:hover{
+    color: red;
+}
+
+.card
+{
+    text-align: start;
+    margin-top: 0px;
+    text-align: left;
+    height: 100%;
+    /* position: fixed; */
+    background-color:yellow; 
+    border:6px solid black
+
+
+}

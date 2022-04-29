@@ -1,0 +1,16 @@
+.example-header-image {
+    background-image: url('../../../../assets/washing-hand.png');
+    background-size: cover;
+  }
+  .first{
+    background: yellow;
+    border: 2px solid black;
+  }
+
+  .ghai{
+    /* margin-top: 0px; */
+    text-align: center;
+    background-color:greenyellow;
+    padding: 7px;
+
+  }

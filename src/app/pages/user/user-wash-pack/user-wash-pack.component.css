@@ -1,0 +1,16 @@
+.example-header-image {
+    background-image: url('../../../../assets/washing-hand.png');
+    background-size: cover;
+  }
+
+  .first{
+
+    background-color: lightblue;
+    border:2px solid black;
+  }
+  .ayush{
+  
+    text-align:center ;
+    background-color: yellow;
+    padding: 7px;
+}

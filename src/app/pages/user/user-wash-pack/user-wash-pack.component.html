@@ -1,0 +1,29 @@
+<h1 class="ayush"><b>Available Wash Packs</b></h1>
+<mat-card class="mt10" *ngFor="let w of washPacks" class="first">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>
+            <h2>WashPack id:{{w.id}}</h2>
+        </mat-card-title>
+        <mat-card-title>
+            <h2>WashPack Name :{{w.packName}}</h2>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <h2>Anount is:{{w.amount}} Rs Only!</h2>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <!-- {{w.discription}} -->
+
+        <button [routerLink]="'/customer/order/'+ w.id" mat-raised-button color="warn" class="ml20">Book</button>
+
+    </mat-card-content>
+    
+   
+   
+</mat-card>
+<!-- <div class="container text-center mt-20">
+<button  routerLink="/admin/add-washPack" mat-raised-button color="accent" class="ml20">Add</button> -->
+
+
+

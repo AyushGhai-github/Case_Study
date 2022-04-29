@@ -1,0 +1,13 @@
+.first{
+    background:chartreuse;
+    border: 2px solid black;
+  }
+  .example-header-image {
+    background-image: url('../../../../assets/rating.png');
+    background-size: cover;
+  }
+  .second{
+    text-align: center;
+    background-color: aqua;
+    padding: 2px;
+  }

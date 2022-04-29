@@ -1,0 +1,57 @@
+<h1 class="Second"><b>Order History</b></h1>
+<mat-card class="mt10" *ngFor="let o of Orders" class="first">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>
+            <h2>Order id: {{o.orderId}}</h2>
+         </mat-card-title>
+        <mat-card-subtitle>
+           <h2>Customer Name: {{o.customerName}}</h2>
+        </mat-card-subtitle>
+        
+        <mat-card-subtitle>
+           <h2>Customer Email: {{o.customerEmail}}</h2> 
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            <h2>Customer Address: {{o.customerAddress}}</h2> 
+         </mat-card-subtitle>
+         <mat-card-subtitle>
+            <h2>Customer contact Number: {{o.customerContactNo}}</h2> 
+         </mat-card-subtitle>
+         <mat-card-subtitle>
+            <h2>Car Name:{{o.carName}}</h2> 
+         </mat-card-subtitle>
+         <mat-card-subtitle>
+            <h2>Car No:{{o.carNo}}</h2> 
+         </mat-card-subtitle>
+         <mat-card-subtitle>
+            <h2>Selected WashPack:{{o.selectedWashpack}} </h2> 
+         </mat-card-subtitle>
+         <mat-card-subtitle>
+            <h2>Date Of Order:{{o.date}} </h2> 
+         </mat-card-subtitle>
+
+         <mat-card-subtitle>
+            <h2>Time Of Order: {{o.time}} A.M </h2> 
+         </mat-card-subtitle>
+
+         <mat-card-subtitle>
+            <h2>Bill Of Total Amount:{{o.totalAmount}} Rs Only!! </h2> 
+         </mat-card-subtitle>
+
+         <mat-card-subtitle>
+            <h2>Payment Status: {{o.paymentStatus}} </h2> 
+         </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <!-- {{w.discription}} -->
+
+    </mat-card-content>
+   
+   
+</mat-card>
+<!-- <div class="container text-center mt-20">
+<button  routerLink="/admin/add-washPack" mat-raised-button color="accent" class="ml20">Add</button>
+</div> -->
+
+

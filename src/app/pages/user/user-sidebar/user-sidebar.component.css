@@ -1,0 +1,30 @@
+.first{
+    background-color:lightgreen;
+}
+/* #sidebar{
+    position:fixed;
+    width:30%;
+    height:100%;
+
+} */
+
+/* .toggle-btn{
+    position: absolute;
+    left:120%;
+    top:15px;
+} */
+
+button:hover{
+    color:orangered;
+}
+ .card
+{
+
+    border: 6px solid black;
+    text-align: start;
+    margin-top: 0px;
+    text-align: left;
+    height: 100%;
+    /* position: fixed; */
+     background-color:lightgreen;  
+}

@@ -1,0 +1,27 @@
+<h1 class="ghai"><b>Available Wash Packs</b></h1>
+<mat-card class="mt10" *ngFor="let w of washPacks" class="first">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>
+            <h2>WashPack id: {{w.id}}</h2>
+         </mat-card-title>
+        <mat-card-subtitle>
+           <h2>WashPack Name: {{w.packName}}</h2>
+        </mat-card-subtitle>
+        
+        <mat-card-subtitle>
+           <h2>WashPack Amount: {{w.amount}} Rs Only!</h2> 
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <!-- {{w.discription}} -->
+
+    </mat-card-content>
+    <button [routerLink]="'/admin/washPack1/'+ w.id" mat-raised-button color="warn" class="ml20">Update</button>
+    <button mat-flat-button color="primary" class="ml20" (click)="deleteWash(w.id)" >Delete</button>
+   
+</mat-card>
+<div class="container text-center mt-20">
+<button  routerLink="/admin/add-washPack" mat-raised-button color="accent" class="ml20">Add</button>
+</div>
+
